@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
     <title>Document</title>
 </head>
 <body>
     <form action="/register">
         <div>
-            <label>Nombre y apellido</label>
-            <input placeholder="Coloca tu nombre" type="text" name="nombre" minlength="8">
+            <label>Nombre</label>
+            <input placeholder="Coloca tu nombre" type="text" name="nombre" minlength="2">
+        </div>
+
+        <div>
+            <label>Apellido</label>
+            <input placeholder="Coloca tu primer apellido" type="text" name="apellido" minlength="2">
         </div>
 
         <div>
             <label>Nombre de usuario</label>
-            <input placeholder="Nombre Usuario" type="text" name="nUsuario" minlength="5">
+            <input placeholder="Nombre Usuario (min. 5 carácteres)" type="text" name="nUsuario" minlength="5">
         </div>
 
         <div>
@@ -24,38 +30,30 @@
         </div>
 
         <div>
-            <label>Domicilio</label>
-            <input placeholder="Coloca tu domicilio" type="text" name="domicilio">
+            <label>Ciudad</label>
+            <input placeholder="Coloca el nombre de tu ciudad" type="text" name="domicilio">
         </div>
 
         <div>
-            <label>Tipo de usuario</label>
-            <label for="vendedor">Vendedor</label>
-            <input type="radio" name="tipousr" value="Vendedor" id="vendedor"></div>
-            <label for="comprador">Comprador</label>
-            <input type="radio" name="tipousr" value="comprador" id="comprador"></input>
-        </div>
-
-        <div>
-            <label>¿Cuáles son tus intereses?</label>    
-            <label for="electro">
-                Electro
-                <input type="checkbox" name="intereses" value="electro" id="electro" ></input>
+            <label>¿Que tipo de anime te gusta más?</label>    
+            <label for="kotomo">
+                kotomo
+                <input type="checkbox" name="intereses" value="kotomo" id="kotomo" ></input>
             </label>
             
-            <label for="Moda">
-                Moda
-                <input type="checkbox" name="intereses" value="Moda" id="Moda"></input>
+            <label for="seinen">
+                seinen
+                <input type="checkbox" name="intereses" value="seinen" id="seinen"></input>
             </label>
             
-            <label for="Hogar">
-                Hogar
-                <input type="checkbox" name="intereses" value="Hogar" id="Hogar"></input>
+            <label for="magical">
+                magical
+                <input type="checkbox" name="intereses" value="magical" id="magical"></input>
             </label>
             
-            <label for="Jugueteria">
-                Jugueteria
-                <input type="checkbox" name="intereses" value="Jugueteria" id="Jugueteria"></input>
+            <label for="otros">
+                otros
+                <input type="checkbox" name="intereses" value="otros" id="otros"></input>
             </label>
 
             <label for="VidaS">
