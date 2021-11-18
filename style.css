@@ -12,37 +12,71 @@ header .top-nav {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 8vh;
+    height: 7vh;
     display: flex;
-    justify-content: space-between;
-    background-color: #f49ac2;
+    justify-content: space-evenly;
+    background-color: #54066E;
+}
+
+header .top-nav .sections {
+    display: flex;
+    align-items: center;
+    flex: row;
+    //margin-left: 5%;
 }
 
 header .top-nav ul li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .top-nav ul li.separator {
+    flex-grow: 4;
 }
 
 header .top-nav ul li a {
     text-decoration: none;
-    color: #343434;
+    color: #FFFFFF;
 }
 
 header .top-nav .sections ul li {
-    font-weight: bold;
+    display: inline;
 }
 
-header .top-nav img {
-    width: 20px;
-    align-self: center;
+header .top-nav .sections ul li a:hover {
+    color: #C118F9;
+    text-decoration: underline;
+}
+
+header .top-nav .logo {
+    align-self: auto;
+}
+
+header .top-nav .logo img {
+    width: 12%;
+    border-color: black;
     border-radius: 50%;
 }
 
 header .top-nav .actions {
-    
+    display: flex;
+    align-items: center;
+    //margin-right: 5%;
+}
+
+header .top-nav .actions ul li a:hover {
+    color: #C118F9;
+    text-decoration: underline;
 }
 
 header .menu-nav {
     display: flex;
+}
+
+main {
+    margin-top: 2vh;
+    background-color: #FFFFFF;
 }
 
 main .shopping-cart {
@@ -51,34 +85,63 @@ main .shopping-cart {
     position: sticky;
     top: 9vh;
     right: 7%;
-    margin-left: 92%;
+    margin-left: 93%;
     background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 main .shopping-cart:hover {
-    background-color: blue;
+    background-color: #9D0CCD;
 }
 
-main .shopping-cart img {
-    height: 90%;
-    width: 90%;
+main .shopping-cart i {
+    color: #FFFF;
 }
 
 main section .products{
+    margin-left: 6%;
+    margin-right: 7%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 main article {
-    width: 70%;
+    width: 50%;
 
 }
 
 main article img {
     width: 100%;
 }
+
+main article discount {
+    
+}
+
+.box {
+    display: flex;
+}
+
+.box-price {
+    flex-direction: row;
+    opacity: 0.7;
+}
+
+.box-price:hover {
+    opacity: 0.9;
+}
+
+.cart-plus {
+    background-color: #00b33c;
+}
+
+.cart-plus:hover {
+    font-weight: bold;
+}
+
+
