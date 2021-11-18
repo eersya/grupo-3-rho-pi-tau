@@ -9,6 +9,10 @@ body {
 }
 
 header .top-nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     background-color: #f49ac2;
@@ -28,7 +32,7 @@ header .top-nav .sections ul li {
 }
 
 header .top-nav img {
-    width: 20%;5
+    width: 20px;
     align-self: center;
     border-radius: 50%;
 }
@@ -39,4 +43,42 @@ header .top-nav .actions {
 
 header .menu-nav {
     display: flex;
+}
+
+main .shopping-cart {
+    height: 50px;
+    width: 50px;
+    position: sticky;
+    top: 9vh;
+    right: 7%;
+    margin-left: 92%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+main .shopping-cart:hover {
+    background-color: blue;
+}
+
+main .shopping-cart img {
+    height: 90%;
+    width: 90%;
+}
+
+main section .products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main article {
+    width: 70%;
+
+}
+
+main article img {
+    width: 100%;
 }
