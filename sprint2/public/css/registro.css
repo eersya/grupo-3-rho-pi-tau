@@ -17,9 +17,15 @@ body{
 /* header  */
 
 header{
-    background-color: #f49ac2;
+    background: linear-gradient(#f49ade, #db6acc);;
+    font-family: 'Roboto', sans-serif;
 }
-
+/* logo header */
+header .top-nav .logo img {
+    width: 20%;
+    align-self: center;
+    border-radius: 50%;
+}
 /* main */
 
  
@@ -37,6 +43,8 @@ main{
         text-align: center;
         border-radius: 10px;
         margin: 20px 0px;
+        padding: 10px;
+        background: linear-gradient(#b94fa2b9, #c70ccdbb);
     }
 
 
@@ -46,9 +54,9 @@ main{
 
         /* register-input */
             h1{
-                color: #03264C;
+                color: white;
             }
-
+   
             main section div.register-input div{
                 margin-bottom: 12px;
             }
@@ -66,23 +74,18 @@ main{
             
 
             button{
-                background-color: #EAC926;
                 color: #03264C;
                 border: none;
                 height: 36px;
                 min-width: 100px;
                 border-radius: 6px;
-                background: linear-gradient(#EAC926, #cdad0c);
+                background: linear-gradient(#b94fa2b9, #c70ccdbb);
             }
 
-            
-            button{
-                background: linear-gradient(#EAC926, #cdad0c);
-            }
+  
 
             button:hover{
-                background:linear-gradient(#0022AA, #011255) ;
-                color: white;
+                background:linear-gradient(#e9b0dcb9, #c896cabb);
             }
 
 
