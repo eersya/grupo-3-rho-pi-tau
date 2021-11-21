@@ -16,6 +16,7 @@ header .top-nav {
     display: flex;
     justify-content: space-evenly;
     background-color: #54066E;
+    z-index: 99;
 }
 
 header .top-nav .sections {
@@ -98,7 +99,7 @@ main .shopping-cart:hover {
 }
 
 main .shopping-cart i {
-    color: #FFFF;
+    color: #FFFFFF;
 }
 
 main section .products{
@@ -112,36 +113,59 @@ main section .products{
 
 main article {
     width: 50%;
-
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-main article img {
+main article .box {
+    position: relative;
+}
+
+main article .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main article .img-box img {
     width: 100%;
 }
 
-main article discount {
-    
-}
-
-.box {
+main article .table {
     display: flex;
+    justify-content: flex-end;
+    flex-grow: column grow;
+    opacity: 0.45;
+    //border: 1px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
 }
 
-.box-price {
-    flex-direction: row;
+main article .table:hover {
     opacity: 0.7;
 }
 
-.box-price:hover {
-    opacity: 0.9;
+main article .table .price {
+    //box-sizing: border-box;
+    color: #FFFFFF;
+    background-color: #4B0082;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 99%;
+    padding: 7%;
 }
 
-.cart-plus {
-    background-color: #00b33c;
+main article .table .cart-plus {
+    color: #FFFFFF;
+    font-size: 97%;
+    background-color: #32CD32;
+    border-radius: 0px 10px 10px 0px;
+    padding: 7%;
 }
 
-.cart-plus:hover {
-    font-weight: bold;
+main article .table .main-article {
+    align-self: flex-end;
 }
-
 
