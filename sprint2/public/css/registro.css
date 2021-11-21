@@ -22,7 +22,7 @@ header{
 }
 /* logo header */
 header .top-nav .logo img {
-    width: 20%;
+    width: 8%;
     align-self: center;
     border-radius: 50%;
 }
@@ -47,6 +47,45 @@ main{
         background: linear-gradient(#b94fa2b9, #c70ccdbb);
     }
 
+        /* Redes sociales */ 
+        main section div.register-input .redes-sociales{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+        main section div.register-input .redes-sociales div{
+            margin-left: 10px;
+            margin: 8px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        main section div.register-input .redes-sociales div a{
+            text-decoration: none;
+            color: white;
+            margin-right: 8px;
+        }
+
+        main section div.register-input .redes-sociales div i{
+            color: white;
+        }
+
+
+        main section div.register-input .redes-sociales .face{
+            background: linear-gradient(#4f5fb9f3, #0c39cd80);
+        }
+
+        main section div.register-input .redes-sociales .twitter{
+            background: linear-gradient(#4f92b9f3, #0c86cd80);
+        }
+
+        main section div.register-input .redes-sociales .google    {
+            background: linear-gradient(#b96d4ff3, #cd490c80);
+        }
+
+
+
 
         /* button-form */
 
@@ -63,7 +102,7 @@ main{
 
             input{
                 border: 1px solid #ccd0d5;
-                border-radius: 6px;
+                border-radius: 7px;
                 padding: 10px;
             }
 
@@ -82,12 +121,22 @@ main{
                 background: linear-gradient(#b94fa2b9, #c70ccdbb);
             }
 
+
+            section .register-input div input.submit {       
+                background:linear-gradient(#b94fa2b9, #c70ccdbb);
+                border: none;
+            }
+    
   
 
             button:hover{
                 background:linear-gradient(#e9b0dcb9, #c896cabb);
             }
 
+
+            section .register-input div input.submit:hover {       
+                background:linear-gradient(#e9b0dcb9, #c896cabb);
+            }
 
 
 
