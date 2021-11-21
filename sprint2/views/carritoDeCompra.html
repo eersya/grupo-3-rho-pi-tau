@@ -1,52 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/carrito.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compra</title>
-</head>
-<body>
-    <h1>Carrito de Compras</h1>
-    <div class="divTable">
-        <div class="divTableHeading">
-            <div class="divTableRow">
-                <div class="divTableHead">Producto</div>
-                <div class="divTableHead">Precio</div>
-                <div class="divTableHead">Cantidad</div>
-                <div class="divTableHead">Total</div>
-            </div>
-        </div>
-        <div class="divTableBody">
-            <div class="divTableRow">
-                <div class="divTableCell">101</div>
-                <div class="divTableCell">$100.00</div>
-                <div class="divTableCell"><button type="button">-</button> 3 <button type="button">+</button></div>
-                <div class="divTableCell">$XXX<br><button type="button">Quitar</button></div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell">102</div>
-                <div class="divTableCell">$100.00</div>
-                <div class="divTableCell"><button type="button">-</button> 3 <button type="button">+</button></div>
-                <div class="divTableCell">$XXX<br><button type="button">Quitar</button></div>
-            </div>
-            <div class="divTableRow">
-                <div class="divTableCell">102</div>
-                <div class="divTableCell">$100.00</div>
-                <div class="divTableCell"><button type="button">-</button> 3 <button type="button">+</button></div>
-                <div class="divTableCell">$XXX<br><button type="button">Quitar</button></div>
-            </div>
-        </div>
-        <div class="divTableFoot">
-            <div class="divTableRow">
-                <div class="divTableCell"><textarea name="textarea" rows="10" cols="20">Comentarios</textarea></div>
-                <div class="divTableCell">&nbsp;</div>
-                <div class="divTableCell">&nbsp;</div>
-                <div class="divTableCell"><p>Subtotal: 11</p><button type="button">Finalizar Pedido</button></div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+<!doctype html>
+<html ng-app="myApp">
+	
+	<head>
+    	<meta charset="utf-8">
+    	<title> AngularJS implementa la función de carrito de compras </title>
+    	
+    	<link rel="stylesheet" href="css/carrito.css">
+	    
+	    <script src="js/angular.min.js"></script>
+	    <script src="js/jquery-3.2.1.min.js"></script>
+    
+	</head>
+	
+	<body>
+		
+	<hr>
+	
+	<h1> Mi carrito de compras </h1>
+	
+	<button class = "btn btn-warning" style = "background: firebrick"> Vaciar el carrito de compras </button>
+	
+	<table border="1" cellspacing="0" style="text-align: center;">
+		
+	    <tr>
+	        <td><label all-orcan><input type="checkbox"></label></td>
+	        <td>Producto</td>
+	        <td ng-click='CartSort("oneprice")'>Precio Unitario</td>
+	        <td>Unidades</td>
+	        <td>Precio Total</td>
+	        <td></td>
+	    </tr>
+	    
+	    <tr ng-repeat="data in dataList">
+	    	
+	        <td><input type="checkbox"></td>
+	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
+	        <td >$100.00 MXN</td>
+	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td >$100.00 MXN</td>
+	        <td> <button > Eliminar </button> </td>
+	        
+	    </tr>
+
+        <tr ng-repeat="data in dataList">
+	    	
+	        <td><input type="checkbox"></td>
+	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
+	        <td >$100.00 MXN</td>
+	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td >$100.00 MXN</td>
+	        <td> <button > Eliminar </button> </td>
+	        
+	    </tr>
+
+        <tr ng-repeat="data in dataList">
+	    	
+	        <td><input type="checkbox"></td>
+	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
+	        <td >$100.00 MXN</td>
+	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td >$100.00 MXN</td>
+	        <td> <button > Eliminar </button> </td>
+	        
+	    </tr>
+	    
+	    <tr>
+	    	
+	        <td colspan="6">
+	             <div style = "text-align: left"> Precio total: $100.00 MXN</div>
+	        </td>
+	        
+	    </tr>
+	    
+	</table>
+    </body>
