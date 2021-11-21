@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    align-items: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: #EAC926;
+}
+table{
+	font-size: 12px;    
+    margin: 45px;     
+    width: 1080px; 
+    text-align: center;    
+    border-collapse: collapse;
+}
+th {     
+    font-size: 13px;     
+    font-weight: normal;     
+    padding: 8px;     
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    
+    border-bottom: 1px solid #fff; 
+    color: #039; 
+    font-weight: bold;
+}
+td {    
+    padding: 8px;     
+    background: #e8edff;     
+    border-bottom: 1px solid #fff;
+    color: #669;    
+    border-top: 1px solid transparent; 
+}
+tr:hover td 
+{ 
+    background: #d0dafd; 
+    color: #339; 
+}
+
+button{
+    color: #03264C;
+    border: none;
+    height: 36px;
+    min-width: 130px;
+    border-radius: 6px;
+    background: linear-gradient(#EAC926, #cdad0c);
+}
+
+
+button{
+    background: linear-gradient(#EAC926, #cdad0c);
+}
+
+button:hover{
+    background:linear-gradient(#0022AA, #011255) ;
+    color: white;
+}
+.button_peque{
+    color: #03264C;
+    border: none;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 6px;
+    background: linear-gradient(#EAC926, #cdad0c);
+}
+tr{
+	height: 50px;
+}
+.imagen_peque {
+	width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+.entrada{
+    width:50px;
+    text-align:center;
+}
+.precioTotal{
+    text-align: left;
+}
+.botonTitulo{
+    background: firebrick;
+}
