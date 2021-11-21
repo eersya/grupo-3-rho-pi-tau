@@ -1,85 +1,117 @@
 /* Propiedades generales de toda la página*/
-
-
 *{
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
 }
-
-
-
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
 }
-
 /* header  */
-
 header{
-    background-color: #EAC926;
+    background: linear-gradient(#f49ade, #db6acc);;
+    font-family: 'Roboto', sans-serif;
 }
-
+header .top-nav .logo img {
+    width: 8%;
+    align-self: center;
+    border-radius: 50%;
+}
 /* main */
-
- 
 main{
     width: 60%;
     margin: 0 auto;
 }   
+/* Box-form */
+main section.Box-form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px 0px;
+    background: linear-gradient(#b94fa2b9, #c70ccdbb);
+}
+/* button-form */
+/* register-input */
+h1{
+    color: white;
+}
 
-    /* Box-form */
+main section div.register-input div{
+    margin-bottom: 12px;
+}
 
-    main section.Box-form{
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        text-align: center;
-        border-radius: 10px;
-        margin: 20px 0px;
-    }
+input{
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    padding: 8px;
+}
 
+button{
+    color: white;
+    border: none;
+    height: 36px;
+    min-width: 130px;
+    border-radius: 6px;
+    background: linear-gradient(#b94fa2b9, #c70ccdbb);
+}
 
-        /* button-form */
+main section div.register-input .redes-sociales{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
 
+main section div.register-input .redes-sociales div{
+    margin-left: 10px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+}
 
+main section div.register-input .redes-sociales .face{
+   background: linear-gradient(#4f5fb9f3, #0c39cd80);
+}
 
-        /* register-input */
-            h1{
-                color: #03264C;
-            }
+main section div.register-input .redes-sociales .twitter{
+    background: linear-gradient(#4f92b9f3, #0c86cd80);
+}
 
-            main section div.register-input div{
-                margin-bottom: 12px;
-            }
-
-            input{
-                border: 1px solid #ccd0d5;
-                border-radius: 6px;
-                padding: 8px;
-            }
-
-            button{
-                color: #03264C;
-                border: none;
-                height: 36px;
-                min-width: 130px;
-                border-radius: 6px;
-                background: linear-gradient(#EAC926, #cdad0c);
-            }
-
-
-            button{
-                background: linear-gradient(#EAC926, #cdad0c);
-            }
-
-            button:hover{
-                background:linear-gradient(#0022AA, #011255) ;
-                color: white;
-            }
+main section div.register-input .redes-sociales .google    {
+    background: linear-gradient(#b96d4ff3, #cd490c80);
+}
 
 
+main section div.register-input .redes-sociales div a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+}
+
+main section div.register-input .redes-sociales div i{
+    color: white;
+}
+ 
+/* Animaciones */ 
+button:hover{
+    background:linear-gradient(#e9b0dcb9, #c896cabb) ;
+    color: white;
+}
 
 
+main section div.register-input .redes-sociales .face:hover{
+    background: linear-gradient(#8792d3f3, #aab6df80);
+}
 
+
+main section div.register-input .redes-sociales .twitter:hover{
+    background: linear-gradient(#8eafc2f3, #79a3bb80);
+}
+
+main section div.register-input .redes-sociales .google:hover{
+    background: linear-gradient(#d6a38bf3, #d3957880);
+}
 
