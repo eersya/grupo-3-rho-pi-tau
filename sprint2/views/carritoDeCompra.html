@@ -3,12 +3,9 @@
 	
 	<head>
     	<meta charset="utf-8">
-    	<title> AngularJS implementa la función de carrito de compras </title>
+    	<title> Carrito de compras </title>
     	
     	<link rel="stylesheet" href="css/carrito.css">
-	    
-	    <script src="js/angular.min.js"></script>
-	    <script src="js/jquery-3.2.1.min.js"></script>
     
 	</head>
 	
@@ -18,47 +15,47 @@
 	
 	<h1> Mi carrito de compras </h1>
 	
-	<button class = "btn btn-warning" style = "background: firebrick"> Vaciar el carrito de compras </button>
+	<button class = "botonTitulo"> Vaciar el carrito de compras </button>
 	
 	<table border="1" cellspacing="0" style="text-align: center;">
 		
 	    <tr>
-	        <td><label all-orcan><input type="checkbox"></label></td>
+	        <td><label><input type="checkbox"></label></td>
 	        <td>Producto</td>
-	        <td ng-click='CartSort("oneprice")'>Precio Unitario</td>
+	        <td>Precio Unitario</td>
 	        <td>Unidades</td>
 	        <td>Precio Total</td>
 	        <td></td>
 	    </tr>
 	    
-	    <tr ng-repeat="data in dataList">
+	    <tr>
 	    	
 	        <td><input type="checkbox"></td>
 	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
 	        <td >$100.00 MXN</td>
-	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td><button class="button_peque" >-</button><input type="text"class="entrada"> <button class="button_peque">+</button> </td>
 	        <td >$100.00 MXN</td>
 	        <td> <button > Eliminar </button> </td>
 	        
 	    </tr>
 
-        <tr ng-repeat="data in dataList">
+        <tr>
 	    	
 	        <td><input type="checkbox"></td>
 	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
 	        <td >$100.00 MXN</td>
-	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td><button class="button_peque" >-</button><input type="text"class="entrada"> <button class="button_peque">+</button> </td>
 	        <td >$100.00 MXN</td>
 	        <td> <button > Eliminar </button> </td>
 	        
 	    </tr>
 
-        <tr ng-repeat="data in dataList">
+        <tr>
 	    	
 	        <td><input type="checkbox"></td>
 	        <td><img src="/images/ahegao_shirt.png" class="imagen_peque" width="80" height="90"/>Producto A</td>
 	        <td >$100.00 MXN</td>
-	        <td><button my-minus >-</button><input type="text" style="width:50px;text-align:center;"> <button >+</button> </td>
+	        <td><button class="button_peque" >-</button><input type="text"class="entrada"> <button class="button_peque" >+</button> </td>
 	        <td >$100.00 MXN</td>
 	        <td> <button > Eliminar </button> </td>
 	        
@@ -66,10 +63,12 @@
 	    
 	    <tr>
 	    	
-	        <td colspan="6">
-	             <div style = "text-align: left"> Precio total: $100.00 MXN</div>
+	        <td colspan="5">
+	             <div class="precioTotal"> Precio total: $100.00 MXN</div>
 	        </td>
-	        
+			<td >
+				<div> <button > Pagar </button></div>
+		   </td>
 	    </tr>
 	    
 	</table>
