@@ -1,0 +1,27 @@
+/* Detalles del producto */
+.producto{
+    display: flex;
+    flex-direction: column;
+}
+
+.detalles_producto{
+    margin: 10px;
+}
+.talla select{
+    width: 100%;
+}
+.cantidad .numero{
+    display: flex;
+    align-items: baseline;
+}
+
+.botones_detalles button{
+    width: 100%;
+}
+
+
+@media (min-width: 700px){
+    .producto{
+        flex-direction: row;
+    }
+}
