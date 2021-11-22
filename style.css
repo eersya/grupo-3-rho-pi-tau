@@ -120,12 +120,24 @@ main article {
 
 main article .box {
     position: relative;
+    padding: 1px;
+}
+
+main article .disscount-table {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    opacity: 0.55;
+    z-index: 2;
+    top: 7%;
+    right: 74%;
+    font-weight: bolder;
+    color: #0eb300 ;
+    padding: 3%;
 }
 
 main article .img-box {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 1;
 }
 
@@ -133,39 +145,77 @@ main article .img-box img {
     width: 100%;
 }
 
-main article .table {
+main article .price-table {
     display: flex;
-    justify-content: flex-end;
-    flex-grow: column grow;
-    opacity: 0.45;
-    //border: 1px solid #000000;
-    border-radius: 10px;
     position: relative;
+    justify-content: flex-end;
+    opacity: 0.55;
     z-index: 2;
+    bottom: 9%;
+    right: 0;
 }
 
-main article .table:hover {
+main article .price-table:hover {
     opacity: 0.7;
 }
 
-main article .table .price {
-    //box-sizing: border-box;
+main article .price-table .price {
     color: #FFFFFF;
     background-color: #4B0082;
     border-radius: 10px 0px 0px 10px;
     font-size: 99%;
-    padding: 7%;
+    padding: 3%;
 }
 
-main article .table .cart-plus {
+main article .price-table .cart-plus {
     color: #FFFFFF;
     font-size: 97%;
-    background-color: #32CD32;
+    background-color: #269900;
     border-radius: 0px 10px 10px 0px;
-    padding: 7%;
+    padding: 3%;
 }
 
-main article .table .main-article {
-    align-self: flex-end;
+main article .title {
+    align-self: center;
+    text-decoration: none;
 }
 
+main article .title a {
+    color: #4b00b3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main article .title a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 11%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .collaborators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+footer .collaborators li {
+    width: 55%;
+    height: 32px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 737px) {
+
+    header .top-nav .sections {
+        display: none;
+    }
+
+}
