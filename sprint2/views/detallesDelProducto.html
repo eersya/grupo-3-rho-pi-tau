@@ -2,67 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/detalle.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Detalles del producto</title>
 </head>
 <body>
     <header>
-        <div>
-            <div>
-                <form>
-                    <input type="text" name="buscar" id="buscar" placeholder="Buscar">
-                    <button type="submit"></button>
-                </form>
-            </div>
-            <div>
-                <a href="#">Cuenta</a>
-                <a href="#">Carrito</a>
+        <!-- Logo -->
+        <div class="top-nav">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo RhoPiTao">
             </div>
         </div>
-        <nav>
-        </nav>
     </header>
-    <main class="producto">
-        
-        <div class="imagen_producto">
-            <img src="img/muestra.jpg" alt="muestra">
+    <main class="detalles">
+        <div class="title">
+            <h1>Producto</h1>
         </div>
-        <div class="detalles_producto">
-            <div class="descripcion_producto">
-                <h2>Producto</h2>
-                <p>$$$</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, nulla eligendi? Pariatur voluptate, sunt voluptates error ad dolorum laudantium porro incidunt iusto cum mollitia necessitatibus voluptatum, a in molestias quia.</p>
-            </div>
-            <div class="talla">
-                <h3>Talla </h3>
-                <select>
-                    <option>Chica</option>
-                    <option>Mediana</option>
-                    <option>Grande</option>
-                </select>
-            </div>
-            <div class="cantidad">
-                <div>
-                    <h3>Cantidad</h3>
+        <div class="producto">
+            <div class="div_images">
+                <div class="imagen_producto">
+                    <button><i class="fas fa-chevron-left"></i></button>
+                    <img src="images/shirt1.jpg" alt="muestra">
+                    <button><i class="fas fa-chevron-right"></i></button>
                 </div>
-                <div class="numero">
-                    <button>+</button>
-                    <p>N</p>
-                    <button>-</button>
+                <div class=reel>
+                    <div>
+                        <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
+                    <div>
+                        <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
+                    <div>
+                       <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
                 </div>
             </div>
-            <div class="botones_detalles">
-                <button name="agregar" id="agregar">Agregar al carrito</button>
-                <button name="comprar" id="comprar">Comprar ahora</button>
-            </div>
-            <div class="detalles_extra">
-                <p>Estampado en serigrafía sin tacto.
+            <div class="detalles_producto">
+                <div class="nombre">
+                    <h2>Playera</h2>
+                </div>
+                <div class="descripcion_producto">
+                    <h4>$Precio</h4>
+                    <h4>Detalles</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, nulla eligendi? Pariatur voluptate, sunt voluptates error ad dolorum laudantium porro incidunt iusto cum mollitia necessitatibus voluptatum, a in molestias quia.</p>
+                </div>
+                <div class="talla">
+                    <h4>Talla </h4>
+                    <select>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                </div>
+                <div class="cantidad">
+                    <div>
+                        <h4>Cantidad</h4>
+                    </div>
+                    <div class="numero">
+                        <button>+</button>
+                        <input type="text">
+                        <button>-</button>
+                    </div>
+                </div>
+                <div class="botones_detalles">
+                    <button name="agregar" id="agregar">Agregar al carrito</button>
+                    <button name="comprar" id="comprar">Comprar ahora</button>
+                </div>
+                <div class="detalles_extra">
+                    <p>Estampado en serigrafía sin tacto.
 
-                    100% algodón peinado ultra-ligero.
-                    
-                    Las fotografías presentadas aquí son ilustrativas, los colores y el acabado final pueden tener algunas variaciones.</p>
+                        100% algodón peinado ultra-ligero.
+                        
+                        Las fotografías presentadas aquí son ilustrativas, los colores y el acabado final pueden tener algunas variaciones.</p>
+                </div>
+            </div>
+        </div>
+        <div class="reseñas">
+            <div> 
+                <h2>Reseñas</h2>
+            </div>
+            <div class="reel_reseñas">
+                <button><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="reseña">
+                    <div class="reseña_imagen">
+                        <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
+                    <div class="reseña_texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Est excepturi neque cum labore a tempora placeat sequi 
+                        </p>
+                    </div>
+                </div>
+                <div class="reseña">
+                    <div class="reseña_imagen">
+                        <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
+                    <div class="reseña_texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Est excepturi neque cum labore a tempora placeat sequi 
+                        </p>
+                    </div>
+                </div>
+                <div class="reseña">
+                    <div class="reseña_imagen">
+                        <img src="images/shirt1.jpg" alt="muestra">
+                    </div>
+                    <div class="reseña_texto">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Est excepturi neque cum labore a tempora placeat sequi 
+                        </p>
+                    </div>
+                </div>
+                <button><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </main>
