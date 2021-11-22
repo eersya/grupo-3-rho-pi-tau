@@ -2,22 +2,27 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
-    align-items: center;
 }
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
 }
+/* main */
+main{
+    width: 60%;
+    margin: 0 auto;
+}  
 h1{
     text-align: center;
+    color: #000000; 
+    font-size: 30px; 
 }
 header{
     background-color: #EAC926;
 }
 table{
-	font-size: 12px;    
-    margin: 45px;     
-    width: 1080px; 
+	font-size: 12px;       
+    /*width: 1080px; */
     text-align: center;    
     border-collapse: collapse;
 }
