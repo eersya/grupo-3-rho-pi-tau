@@ -123,9 +123,7 @@ main article .box {
 }
 
 main article .img-box {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 1;
 }
 
@@ -135,26 +133,29 @@ main article .img-box img {
 
 main article .table {
     display: flex;
-    justify-content: flex-end;
-    flex-grow: column grow;
-    opacity: 0.45;
-    //border: 1px solid #000000;
-    border-radius: 10px;
+    flex-grow: column-grow;
     position: relative;
-    z-index: 2;
-}
-
-main article .table:hover {
-    opacity: 0.7;
 }
 
 main article .table .price {
-    //box-sizing: border-box;
+    justify-content: flex-end;
+    opacity: 0.55;
+    //border: 1px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    bottom: 13%;
+    right: 0;
+    z-index: 2;
     color: #FFFFFF;
     background-color: #4B0082;
     border-radius: 10px 0px 0px 10px;
     font-size: 99%;
-    padding: 7%;
+    padding: 3%;
+}
+}
+
+main article .table .price:hover {
+    opacity: 0.7;
 }
 
 main article .table .cart-plus {
@@ -162,7 +163,7 @@ main article .table .cart-plus {
     font-size: 97%;
     background-color: #32CD32;
     border-radius: 0px 10px 10px 0px;
-    padding: 7%;
+    padding: 3%;
 }
 
 main article .table .main-article {
