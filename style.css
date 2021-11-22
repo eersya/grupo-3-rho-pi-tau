@@ -190,6 +190,28 @@ main article .title a:hover {
     text-decoration: underline;
 }
 
+footer {
+    padding: 11%;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .collaborators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+footer .collaborators li {
+    width: 55%;
+    height: 32px;
+    text-align: center;
+    justify-content: center;
+}
+
 @media (max-width: 737px) {
 
     header .top-nav .sections {
