@@ -9,19 +9,79 @@ body{
     background-color: #ffffff;
 }
 /* header  */
-header{
-    background: linear-gradient(#f49ade, #db6acc);;
-    font-family: 'Roboto', sans-serif;
+
+
+header .top-nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #76378b;
+    z-index: 99;
 }
+
+header .top-nav .sections {
+    display: flex;
+    align-items: center;
+    flex: row;
+    //margin-left: 5%;
+}
+
+header .top-nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .top-nav ul li.separator {
+    flex-grow: 4;
+}
+
+header .top-nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header .top-nav .sections ul li {
+    display: inline;
+}
+
+header .top-nav .sections ul li a:hover {
+    color: #C118F9;
+    text-decoration: underline;
+}
+
+header .top-nav .logo {
+    align-self: auto;
+}
+
 header .top-nav .logo img {
-    width: 8%;
-    align-self: center;
+    width: 12%;
+    border-color: black;
     border-radius: 50%;
+}
+
+header .top-nav .actions {
+    display: flex;
+    align-items: center;
+    //margin-right: 5%;
+}
+
+header .top-nav .actions ul li a:hover {
+    color: #C118F9;
+    text-decoration: underline;
+}
+
+header .menu-nav {
+    display: flex;
 }
 /* main */
 main{
     width: 60%;
     margin: 0 auto;
+    margin-top: 20vh;
 }   
 /* Box-form */
 main section.Box-form{
@@ -31,7 +91,7 @@ main section.Box-form{
     text-align: center;
     border-radius: 20px;
     margin: 20px 0px;
-    background: linear-gradient(#b94fa2b9, #c70ccdbb);
+    background-color: #76378b;
 }
 /* button-form */
 /* register-input */
@@ -55,7 +115,7 @@ button{
     height: 36px;
     min-width: 130px;
     border-radius: 6px;
-    background: linear-gradient(#b94fa2b9, #c70ccdbb);
+    background-color: #76378b;
 }
 
 main section div.register-input .redes-sociales{
@@ -115,3 +175,12 @@ main section div.register-input .redes-sociales .google:hover{
     background: linear-gradient(#d6a38bf3, #d3957880);
 }
 
+
+button{
+    color: white;
+    border: none;
+    height: 36px;
+    min-width: 100px;
+    border-radius: 6px;
+    background: linear-gradient(#b94fa2b9, #c70ccdbb);
+}
