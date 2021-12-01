@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <title>Register</title>
+</head>
+
+<body>
+
+    
+    <header>
+
+        <nav class="top-nav">
+
+            <div class="logo">
+                <a href="#">
+                    <img src="/images/logo.png" alt="Logo RhoPiTao">
+                </a>
+            </div>
+
+            <div class="actions">
+                <ul>
+                    <li>
+                        <a href="/" >Home</a>
+                    </li>
+                    <li>
+                        <a href="/login" >Login</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="Box-form">
+
+            <div class="Button-register">
+
+                <h1>Registrate</h1>
+
+            </div>
+
+            <div class="register-input">
+
+                <h2>Ingresa con:</h2>
+
+
+                <div class="redes-sociales">
+
+                    <div class="face">
+                        <a href="#" >Facebook</a><i class="fab fa-facebook-f"></i>
+                    </div>
+
+                    <div class="google">
+                        <a href="#" >Google</a><i class="fab fa-google"></i>
+                    </div>
+
+                    <div class="twitter">
+                        <a href="#" >Twitter</a><i class="fab fa-twitter"></i>                        
+                    </div>
+
+                </div>
+
+                <h2>Registra tus datos</h2>
+
+
+                <form action="/register">
+                    <div>
+                        <input placeholder="Coloca tu nombre" type="text" name="nombre" minlength="8" class="box">
+                    </div>
+            
+                    <div>
+                        <input placeholder="Nombre Usuario" type="text" name="nUsuario" minlength="5" class="box">
+                    </div>
+            
+                    <div>
+                        <input placeholder="dd/mm/aaaa" type="date" name="fechanac" required class="box">
+                    </div>
+            
+                    <div>
+                        <input placeholder="Coloca tu domicilio" type="text" name="domicilio" class="box">
+                    </div>
+
+                    <div>
+                        <input placeholder="Correo electrónico" type="text" name="nombre" minlength="8" class="box">
+                    </div>
+            
+                    
+                    <div>
+                        <label for="vendedor">Quiero vender</label>
+                        <input type="radio" name="tipousr" value="Vendedor" id="vendedor"></input>
+                        <label for="comprador">Quiero Comprar</label>
+                        <input type="radio" name="tipousr" value="comprador" id="comprador"></input>
+                        <label for="Ambos">Ambos</label>
+                        <input type="radio" name="tipousr" value="Ambos" id="Ambos"></input>
+
+                    </div>
+            
+                    <div>
+                        <label>Elige tu género de anime favorito</label>  
+                    </div>
+
+                    <div>
+                          
+                        <label for="accion">
+                            Acción
+                            <input type="checkbox" name="intereses" value="accion" id="accion" ></input>
+                        </label>
+                        
+                        <label for="aventura">
+                            Aventura
+                            <input type="checkbox" name="intereses"" value="aventura" id="aventura"></input>
+                        </label>
+                        
+                        <label for="comedia">
+                            Comedia
+                            <input type="checkbox" name="intereses" value="comedia" id="comedia"></input>
+                        </label>
+                        
+                        <label for="ciencia">
+                            Ciencia ficción
+                            <input type="checkbox" name="intereses" value="ciencia" id="ciencia"></input>
+                        </label>
+            
+                        <label for="VidaS">
+                            Drama
+                            <input type="checkbox" name="intereses" value="drama" id="drama" ></input>
+                        </label>
+
+                    </div>
+            
+                    <div>
+                        <label>Seleccionar una imagen para el perfil:
+                        <input type="file" name="avatar" accept=".jpg" multiple class="box" >
+                        </label>
+                    </div>
+            
+                    <div>
+
+                        <input type="password" placeholder="Contraseña"  name="password" id="password" minlength="8" class="box">
+                            
+                    </div>
+
+                    <div>
+                        
+                        <input type="password" placeholder="Confirmar contraseña" name="confirm_password" id="confirm_password" minlength="8" class="box-Pass">
+                        <input type="submit" value="Confirmar" class="submit">         
+                        
+                    </div>
+                    
+                  
+
+            
+                    <div>
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+
+
+   
+
+
+    </form>
+</body>
+</html>
