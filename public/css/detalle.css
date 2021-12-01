@@ -9,7 +9,7 @@ body{
 }
 /* header  */
 header{
-    background: linear-gradient(#f49ade, #db6acc);;
+    background: #76378b;
     font-family: 'Roboto', sans-serif;
 }
 header .top-nav .logo img {
@@ -49,17 +49,17 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #d0dafd; 
+    background: #d75880; 
     border-radius: 5px;
 }
 
 .imagen_producto button{
-    color: #03264C;
+    color: #76378b;
     border: none;
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    background: linear-gradient(#EAC926, #cdad0c);
+    background: #FAC187;
 }
 
 .imagen_producto img{
@@ -79,7 +79,7 @@ h1{
     display: flex;
     justify-content: center;
     max-width: 15%;
-    background: #d0dafd; 
+    background: #d75880; 
     border-radius: 5px;
 }
 .reel img{
@@ -93,50 +93,47 @@ h1{
 .nombre{    
     font-weight: normal;     
     padding: 8px;     
-    background: #f49ade;
-    border-top: 4px solid #db6acc;    
+    background: #76378b;;    
     border-bottom: 1px solid #fff; 
-    color: #039; 
+    color: #FAC187; 
     font-weight: bold;
 }
 .descripcion_producto{
     padding: 8px;     
-    background: #e8edff;     
+    background: #d75880;     
     border-bottom: 1px solid #fff;
-    color: #669;    
-    border-top: 1px solid transparent;
+    color: #FAC187;    
+
 }
 
 .talla{
     padding: 8px;     
-    background: #e8edff;     
+    background: #d75880;     
     border-bottom: 1px solid #fff;
-    color: #669;    
-    border-top: 1px solid transparent;
+    color: #FAC187;      
 }
 
 .talla select{
     width: 50%;
-    color: #03264C;
+    color: #76378b;
     border: none;
     height: 30px;
     border-radius: 6px;
-    background: linear-gradient(#EAC926, #cdad0c);
+    background: #FAC187
 }
 .cantidad{
     padding: 8px;     
-    background: #e8edff;     
+    background: #d75880;     
     border-bottom: 1px solid #fff;
-    color: #669;    
-    border-top: 1px solid transparent;
+    color: #FAC187;    
 }
 .cantidad button{
-    color: #03264C;
+    color: #76378b;
     border: none;
     height: 20px;
     min-width: 20px;
     border-radius: 6px;
-    background: linear-gradient(#EAC926, #cdad0c);
+    background: #FAC187;
 }
 .cantidad input{
     width:50px;
@@ -149,26 +146,23 @@ h1{
     align-items: center;
     gap: 20px;
     padding: 8px;     
-    background: #e8edff;     
-    border-bottom: 1px solid #fff;
-    color: #669;    
-    border-top: 1px solid transparent;
+    background: #d75880;
+
 }
 
 .botones_detalles button{
-    color: #03264C;
+    color: #76378b;
     border: none;
     height: 30px;
     border-radius: 6px;
-    background: linear-gradient(#EAC926, #cdad0c);
+    background: #FAC187;
 }
 
 .detalles_extra{
     padding: 8px;     
-    background: #e8edff;     
+    background: #d75880;     
     border-bottom: 1px solid #fff;
-    color: #669;    
-    border-top: 1px solid transparent;
+    color: #FAC187;
 }
 
 .reseñas{
@@ -177,15 +171,15 @@ h1{
     flex-direction: column;
     margin-right: 5%;
     margin-left: 5%;
+    margin-bottom: 30px;
 }
 
 .reseñas h2{
     font-weight: normal;     
     padding: 8px;     
-    background: #f49ade;
-    border-top: 4px solid #db6acc;    
+    background: #76378b;  
     border-bottom: 1px solid #fff; 
-    color: #039; 
+    color: #FAC187; 
     font-weight: bold;
 }
 
@@ -194,19 +188,19 @@ h1{
     justify-content: space-around;
     align-items: center;
     padding: 8px;     
-    background: #e8edff;     
+    background: #d75880;     
     border-bottom: 1px solid #fff;
-    color: #669;    
+    color: #FAC187;    
     border-top: 1px solid transparent;
 }
 
 .reel_reseñas button{
-    color: #03264C;
+    color: #76378b;
     border: none;
     height: 40px;
     width: 40px;
     border-radius: 20px;
-    background: linear-gradient(#EAC926, #cdad0c);
+    background: #FAC187;
 }
 
 .reseña{
@@ -247,6 +241,102 @@ select:hover{
     color: #339; 
 }
 
+footer a{
+    text-decoration:none;
+}
+
+footer p{
+    color: #FAC187;
+}
+
+footer a:visited{
+    color: #FAC187;
+}
+
+.contenido_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 8vh;
+    background-color: #76378b;
+}
+
+.redes i{
+    font-size: 2.5vh;
+    border-radius: 60px;
+    box-shadow: 0px 0px 3px #FAC187;
+    padding: 0.5em 0.6em
+ 
+}
+
+
+.formulario form{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    height: 8vh;
+    font-size: 2.5vh;
+    background-color: #76378b;
+    color: #FAC187;
+}
+
+.formulario button{
+    background-color: #FAC187;
+    color: #76378b;
+}
+
+.email{
+    height: 3vh;
+    width: 20vw;
+}
+.registro{
+    font-size: 2vh;
+}
+.secciones_footer div{
+    width: 22%;
+}
+.secciones_footer{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 19vh;
+    background-color: #76378b;
+}
+
+.secciones_footer{
+    font-size: 1.8vh;
+    background-color: #76378b;
+}
+
+.titulos_footer{
+    margin-top: 20px;
+    font-size: 2.3vh;
+    margin-bottom: 5px;
+    color: #FAC187;
+}
+
+.secciones_footer p{
+    font-size: 2vh;
+    margin: 5px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-size: 2.5vh;
+    background-color: #d75880;
+    color: #FAC187;
+
+}
 
 
 @media (min-width: 1200px){
