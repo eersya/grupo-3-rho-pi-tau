@@ -23,7 +23,7 @@ header .top-nav .sections {
     display: flex;
     align-items: center;
     flex: row;
-    //margin-left: 5%;
+    margin-left: 5%;
 }
 
 header .top-nav ul li {
@@ -63,7 +63,7 @@ header .top-nav .logo img {
 header .top-nav .actions {
     display: flex;
     align-items: center;
-    //margin-right: 5%;
+    margin-right: 5%;
 }
 
 header .top-nav .actions ul li a:hover {

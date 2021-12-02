@@ -5,25 +5,25 @@ const path = require('path');
 const mainController = {
 
     home: (req,res) => {
-        res.sendFile(__dirname + '../views/home.html');
+        res.render('home');
     },
 
     register: (req,res) => {
-        res.sendFile(__dirname + '../views/formularioderegistro.html');
+        res.render('formularioderegistro');
     },
 
     login: (req,res) => {
-        res.sendFile(__dirname + '../views/login.html');
+        res.render('login');
     },
 
     // Cuando tengamos los modelos de nuestros productos
     // tendremos que migrar y modificar este método
     detailProduct: (req,res) => {
-        res.sendFile(__dirname + '../views/detallesDelProducto.html');
+        res.sendFile('detallesDelProducto');
     },
 
     carritoDeCompras: (req,res) => {
-        res.sendFile(__dirname + '../views/carritoDeCompra.html');
+        res.sendFile( 'carritoDeCompra');
     }
 
 };
