@@ -19,11 +19,11 @@ const mainController = {
     // Cuando tengamos los modelos de nuestros productos
     // tendremos que migrar y modificar este método
     detailProduct: (req,res) => {
-        res.sendFile('detallesDelProducto');
+        res.render('detallesDelProducto');
     },
 
     carritoDeCompras: (req,res) => {
-        res.sendFile( 'carritoDeCompra');
+        res.render( 'carritoDeCompra');
     }
 
 };

@@ -12,45 +12,8 @@
 
     <body>
 
-        <header>
-
-            <nav class="top-nav">
-
-                <div class="sections">
-                    <ul>
-                        <li>
-                            <a href="#">Camisetas</a>
-                        </li>
-                        <li class="separator">
-                            |
-                        </li>
-                        <li>
-                            <a href="#">Gorras</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="logo">
-                    <a href="#">
-                        <img src="/images/logo.png" alt="Logo RhoPiTao">
-                    </a>
-                </div>
-
-                <div class="actions">
-                    <ul>
-                        <li>
-                            <a href="/login" >Iniciar Sesión</a>
-                        </li>
-                        <li>
-                            <a href="/register" >Registrarse</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
-
-
-        </header>
+        <!-- Header -->
+        <%- include("./partials/header") %>
 
         <main>
 
@@ -86,7 +49,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -116,7 +79,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -146,7 +109,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -176,7 +139,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -206,7 +169,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -236,7 +199,7 @@
                         </div>
 
                         <div class="title">
-                            <a href="#" >
+                            <a href="/detalle" >
                                 Playera Génerica
                             </a>
                         </div>
@@ -250,36 +213,7 @@
 
         </main>
 
-        <footer>
-
-            <div>
-
-                <h4>Colaboradores:</h4>
-                <div class="collaborators">
-                    <ul>
-                        <li>Andoni Reyes</li>
-                        <li>Angel Sanchez</li>
-                        <li>Francisco Minajas</li>
-                        <li>Jose Rodríguez</li>
-                    </ul>
-                </div>
-
-                <!-- estaría genial aqui poner un grid y en cada cuadro colocar
-                     los logotipos de las tecnlogías/herramientas ocupadas
-                -->
-                <div class="tech-used">
-                    <h4>Tecnologías ocupadas</h4>
-                    <ul>
-                        <li>JS</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Git</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </footer>
+        <%- include("./partials/footer") %>
 
     </body>
 
