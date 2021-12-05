@@ -10,7 +10,7 @@ mainRouter.get('/register', mainController.register);
 
 mainRouter.get('/login', mainController.login);
 
-mainRouter.get('/detalle', mainController.detailProduct);
+mainRouter.get('/detalle/:id', mainController.detailProduct);
 
 mainRouter.get('/carritoDeCompra', mainController.carritoDeCompras);
 
