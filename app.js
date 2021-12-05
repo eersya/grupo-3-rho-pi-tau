@@ -8,6 +8,7 @@ const mainRouter = require('./routers/mainRouter');
 const app = express();
 app.use('/', mainRouter);
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* Choose available port */

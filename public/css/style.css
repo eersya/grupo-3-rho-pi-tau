@@ -127,12 +127,12 @@ main article .disscount-table {
     display: flex;
     position: relative;
     justify-content: flex-end;
-    opacity: 0.55;
     z-index: 2;
     top: 7%;
     right: 74%;
     font-weight: bolder;
-    color: #0eb300 ;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 3%;
 }
 

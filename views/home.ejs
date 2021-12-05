@@ -25,187 +25,39 @@
                 <h3>¡Checa la últimas promociones!</h3>
 
                 <div class="products">
-                    
-                    <article>
+                    <% for(const playera of productos) { %>
+                        <article>
 
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
-                            </div>
-
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
+                            <div class="box">
+                                <div class="disscount-table"> 
+                                    <% if (playera.descuento){ %>
+                                        <%= playera.descuentoPorcentaje%>% OFF 
+                                    <% } else { %>
+                                        Adquierela ya!  
+                                    <% } %>
                                 </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
+                                <div class="img-box">
+                                    <a href="/detalle/<%= playera.id %>"> <img src="/images/<%= playera.id%>-1.png" alt="Shirt" class="product-img"> </a>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
-                            </div>
-
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
-                                </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
+                                <div class="price-table">
+                                    <div class="table-cell price">
+                                        $<%= playera.precio* (1 - playera.descuentoPorcentaje/100) %>
+                                    </div>
+                                    <div class="table-cell cart-plus">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
+                            <div class="title">
+                                <a href="/detalle/<%= playera.id %>">
+                                    <%= playera.titulo%>
+                                </a>
                             </div>
 
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
-                                </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
-                            </div>
-
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
-                                </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
-                            </div>
-
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
-                                </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
-                    <article>
-
-                        <div class="box">
-
-                            <div class="disscount-table">
-                                50% OFF
-                            </div>
-
-                            <div class="img-box">
-                                <img src="/images/ahegao_shirt.png" alt="Shirt" class="product-img">
-                            </div>
-
-                            <div class="price-table">
-                                <div class="table-cell price">
-                                    $9.99
-                                </div>
-                                <div class="table-cell cart-plus">
-                                    <i class="fas fa-cart-plus"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="title">
-                            <a href="/detalle" >
-                                Playera Génerica
-                            </a>
-                        </div>
-
-                    </article>
-
+                        </article>
+                    <% } %>
                 </div>
 
 
