@@ -228,10 +228,10 @@ footer a:visited{
 
 .formulario form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2vw;
     align-items: center;
-    height: 8vh;
     font-size: 2.5vh;
     background-color: #76378b;
     color: #FAC187;
@@ -249,14 +249,12 @@ footer a:visited{
 .registro{
     font-size: 2vh;
 }
-.secciones_footer div{
-    width: 22%;
-}
+
 .secciones_footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
-    height: 19vh;
+    
     background-color: #76378b;
 }
 
@@ -272,6 +270,11 @@ footer a:visited{
     color: #FAC187;
 }
 
+.secciones_footer div{
+    text-align: center;
+    width: 100%;
+}
+
 .secciones_footer p{
     font-size: 2vh;
     margin: 5px;
@@ -281,7 +284,6 @@ footer a:visited{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8vh;
     font-size: 2.5vh;
     background-color: #d75880;
     color: #FAC187;
@@ -294,4 +296,18 @@ footer a:visited{
         display: none;
     }
 
+}
+
+@media (min-width: 700px){
+    .secciones_footer{
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .secciones_footer div{
+        text-align: start;
+        width: 22%;
+    }
+    .formulario form {
+        flex-direction: row;
+    }
 }
