@@ -14,8 +14,8 @@ mainRouter.get('/detalle/:id', mainController.detailProduct);
 
 mainRouter.get('/carritoDeCompra', mainController.carritoDeCompras);
 
-mainRouter.get('/nuevoProducto', mainController.carritoDeCompras);
+mainRouter.get('/nuevoProducto', mainController.nuevoProducto);
 
-mainRouter.get('/modificaProducto', mainController.carritoDeCompras);
+mainRouter.get('/modificaProducto', mainController.modificaProducto);
 
 module.exports = mainRouter;
