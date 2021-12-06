@@ -26,6 +26,14 @@ const mainController = {
 
     carritoDeCompras: (req,res) => {
         res.render( 'carritoDeCompra');
+    },
+
+    nuevoProducto: (req,res) => {
+        res.render( 'nuevoProducto');
+    },
+
+    modificaProducto: (req,res) => {
+        res.render( 'modificaProducto');
     }
 
 };
