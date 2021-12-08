@@ -1,72 +1,10 @@
-<!DOCTYPE html>
-<html>
+<!-- Header -->
+<% include("./partials/header.ejs")  %>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Rho-Pi-Tao</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
-    </head>
-
-    <body>
-
-        <!-- Header -->
-        <%- include("./partials/header") %>
-
-        <main>
-
-            <div class="shopping-cart">
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-
-            <section class="offs">
-                <h3>¡Checa la últimas promociones!</h3>
-
-                <div class="products">
-                    <% for(const playera of productos) { %>
-                        <article>
-
-                            <div class="box">
-                                <div class="disscount-table"> 
-                                    <% if (playera.descuento){ %>
-                                        <%= playera.descuentoPorcentaje%>% OFF 
-                                    <% } else { %>
-                                        Adquierela ya!  
-                                    <% } %>
-                                </div>
-                                <div class="img-box">
-                                    <a href="/detalle/<%= playera.id %>"> <img src="/images/<%= playera.id%>-1.png" alt="Shirt" class="product-img"> </a>
-                                </div>
-
-                                <div class="price-table">
-                                    <div class="table-cell price">
-                                        $<%= playera.precio* (1 - playera.descuentoPorcentaje/100) %>
-                                    </div>
-                                    <div class="table-cell cart-plus">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="title">
-                                <a href="/detalle/<%= playera.id %>">
-                                    <%= playera.titulo%>
-                                </a>
-                            </div>
-
-                        </article>
-                    <% } %>
-                </div>
+<!-- Shopping and  Favorite Icons -->
+<% include("./partials/shopping-favorites-icons.ejs") %>
 
 
-            </section>
 
-        </main>
-
-        <%- include("./partials/footer") %>
-
-    </body>
-
-</html>
+<!-- Footer -->
+<% include("./partials/footer.ejs") %>
