@@ -13,7 +13,7 @@ const userController = {
         }else{
             res.send("detallesDeUsuario",{user: users});
         }
-    }
+    },
 
     createUser: function(req,res){
 
