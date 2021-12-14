@@ -16,3 +16,18 @@ Acordamos implementar cambios en el estilo de cada página con el propósito de 
 Se platicó sobre la necesidad de modificar la paleta de colores y su consistencia a través de las páginas que conforman nuestro proyecto. Este problema surgió debido a que al finalizar el *Sprint 1* la página de inicio aplicaba un estilo diferente al resto de páginas.
 
 Se acordó investigar y experimentar con nuevos colores para la elección de una nueva paleta de coleres.
+
+## Sprint 4
+
+### 07-12-2021
+
+Se asignaron las nuevas tareas para los siguientes dias: 
+
+1. CRUD de productos
+
+2.  CRUD de usuarios
+
+3. Archivos JSON
+
+   
+
