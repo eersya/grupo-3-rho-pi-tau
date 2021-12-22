@@ -1,7 +1,7 @@
 playeras = [
     {
         id: 'Gojo',
-        titulo: 'Gojo lentes de sol',
+        name: 'Gojo lentes de sol',
         colores: ['negro', 'rosa', 'beige'],
         precio: 230,
         genero: 'Hombre',
@@ -11,7 +11,7 @@ playeras = [
     },
     {
         id: 'Itadori',
-        titulo: 'Itadori sukuna',
+        name: 'Itadori sukuna',
         colores: ['negro', 'azul', 'rosa'],
         precio: 230,
         genero: 'Hombre',
@@ -21,7 +21,7 @@ playeras = [
     },
     {
         id: 'Jujutsu',
-        titulo: 'Jujutsu protas',
+        name: 'Jujutsu protas',
         colores: ['blanco', 'negro', 'rosa'],
         precio: 230,
         genero: 'Hombre',
@@ -31,7 +31,7 @@ playeras = [
     },
     {
         id: 'Tangir-os',
-        titulo: "TangirO's",
+        name: "TangirO's",
         colores: ['blanco', 'negro'],
         precio: 230,
         genero: 'Hombre',
@@ -41,7 +41,7 @@ playeras = [
     },
     {
         id: 'TitanFlakes',
-        titulo: 'Titan Flakers',
+        name: 'Titan Flakers',
         colores: ['blanco', 'negro'],
         precio: 230,
         genero: 'Hombre',
@@ -51,7 +51,7 @@ playeras = [
     },
     {
         id: 'Ami',
-        titulo: 'Misa shinigamis',
+        name: 'Misa shinigamis',
         colores: ['blanco', 'negro', 'beige'],
         precio: 230,
         genero: 'Mujer',
@@ -61,7 +61,7 @@ playeras = [
     },
     {
         id: 'Kiki',
-        titulo: 'Kiki: entregas a domicilio',
+        name: 'Kiki: entregas a domicilio',
         colores: ['blanco', 'negro', 'amarillo'],
         precio: 230,
         genero: 'Mujer',
@@ -71,7 +71,7 @@ playeras = [
     },
     {
         id: 'Nezuko',
-        titulo: 'Just Nezuko',
+        name: 'Just Nezuko',
         colores: ['blanco', 'negro', 'rosa'],
         precio: 230,
         genero: 'Mujer',
@@ -81,7 +81,7 @@ playeras = [
     },
     {
         id: 'Nezuko1',
-        titulo: 'Nezuko Flores',
+        name: 'Nezuko Flores',
         colores: ['blanco', 'negro', 'rosa'],
         precio: 230,
         genero: 'Mujer',
@@ -91,7 +91,7 @@ playeras = [
     },
     {
         id: 'Toga',
-        titulo: 'Himiko Toga',
+        name: 'Himiko Toga',
         colores: ['blanco', 'negro', 'rosa'],
         precio: 230,
         genero: 'Mujer',
