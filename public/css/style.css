@@ -1,8 +1,10 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+/*
+El estilo de la barras de navegación, los íconos del carrito de compras
+y el footer, se encuntran en base.css.
+
+El objetivo es que style.css contenga el resto de estilos de nuestro proyecto y no se creen por separado el estilo de cada página.
+*/
+@import "base.css";
 
 body {
     font-family: 'Roboto', sans-serif;
