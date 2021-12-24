@@ -1,5 +1,5 @@
-const DB_FILENAME = 'productos.json';
-const productos = require('./productos');
+const DB_FILENAME = 'carrito.json';
+const carrito = require('./carrito');
 
 const path = require('path');
 const fs = require('fs');
@@ -10,15 +10,15 @@ function saveProducts(ps) {
     fs.writeFileSync(DB_FILANAME, JSON.stringify(ps));
 }
 
-const productControllers = {
+const carritoControllers = {
 
     viewProducts: function(req, res) {
-        res.render('home', { productos: productos });
+        res.render('home', { carrito: carrito });
     },
 
     detailProduct: function(req, res) {
         const id = req.params.id;
-        const product = productos.find( item => item.id == id);
+        const product = carrito.find( item => item.id == id);
 
         if (product === null) {
             res.send("No existe este producto");
@@ -40,7 +40,7 @@ const productControllers = {
             discount : body.discount
         };
 
-        const newProducts = products.push(newProduct);
+        const newProducts = carrito.push(newProduct);
         saveProducts(newProducts);
 
     },
@@ -48,7 +48,7 @@ const productControllers = {
     deleteProduct: function(req, res) {
         const id = req.params.id;
 
-        const newProducts = products.filter(p => p.id == id);
+        const newProducts = carrito.filter(p => p.id == id);
         saveProducts(newProducts);
 
         viewProducts(req, res);
@@ -58,11 +58,10 @@ const productControllers = {
     updateProduct: function(req, res) {
         const id = req.params.id;
 
-        const filteredProducts = products.filter(p => p.id == id);
+        const filteredProducts = carrito.filter(p => p.id == id);
 
         
     }
-    
 };
 
-module.exports = productControllers;
+module.exports = carritoControllers;

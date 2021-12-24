@@ -1,5 +1,7 @@
+const fs = require('fs');
 const path = require('path');
-const productos = require('./productos');
+const productsFilePath = path.join(__dirname, '../data/productos.json');
+const productos = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 // ToDo: modificar los docuemntos a .ejs
 
 const mainController = {
