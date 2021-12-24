@@ -1,19 +1,8 @@
-playeras = [
+carrito = [
     {
         id: 'Gojo',
         name: 'Gojo lentes de sol',
-        colores: ['negro', 'rosa', 'beige'],
-        precio: 230,
-        genero: 'Hombre',
-        categoria: 'Jujutsu Kaisen',
-        descuento: true,
-        descuentoPorcentaje: 20,
-        cantidad: 10
-    },
-    {
-        id: 'Itadori',
-        name: 'Itadori sukuna',
-        colores: ['negro', 'azul', 'rosa'],
+        colores: ['beige'],
         precio: 230,
         genero: 'Hombre',
         categoria: 'Jujutsu Kaisen',
@@ -24,46 +13,35 @@ playeras = [
     {
         id: 'Jujutsu',
         name: 'Jujutsu protas',
-        colores: ['blanco', 'negro', 'rosa'],
+        colores: ['negro'],
         precio: 230,
         genero: 'Hombre',
         categoria: 'Jujutsu Kaisen',
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 5
+        cantidad: 1
     },
     {
         id: 'Tangir-os',
         name: "TangirO's",
-        colores: ['blanco', 'negro'],
+        colores: ['blanco'],
         precio: 230,
         genero: 'Hombre',
         categoria: 'Kimetsu no Yaiba',
         descuento: true,
         descuentoPorcentaje: 20,
-        cantidad: 15
-    },
-    {
-        id: 'TitanFlakes',
-        name: 'Titan Flakers',
-        colores: ['blanco', 'negro'],
-        precio: 230,
-        genero: 'Hombre',
-        categoria: 'Shingeki non Kyojin', 
-        descuento: false,
-        descuentoPorcentaje: null,
-        cantidad: 19
+        cantidad: 1
     },
     {
         id: 'Ami',
         name: 'Misa shinigamis',
-        colores: ['blanco', 'negro', 'beige'],
+        colores: ['beige'],
         precio: 230,
         genero: 'Mujer',
         categoria: 'Death Note', 
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 21
+        cantidad: 2
     },
     {
         id: 'Kiki',
@@ -74,7 +52,7 @@ playeras = [
         categoria: 'Studio Ghibli', 
         descuento: true,
         descuentoPorcentaje: 15,
-        cantidad: 22
+        cantidad: 3
     },
     {
         id: 'Nezuko',
@@ -85,7 +63,7 @@ playeras = [
         categoria: 'Kimetsu no Yaiba', 
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 10
+        cantidad: 5
     },
     {
         id: 'Nezuko1',
@@ -96,19 +74,8 @@ playeras = [
         categoria: 'Kimetsu no Yaiba', 
         descuento: true,
         descuentoPorcentaje: 25,
-        cantidad: 10
-    },
-    {
-        id: 'Toga',
-        name: 'Himiko Toga',
-        colores: ['blanco', 'negro', 'rosa'],
-        precio: 230,
-        genero: 'Mujer',
-        categoria: 'Boku no hero', 
-        descuento: false,
-        descuentoPorcentaje: null,
-        cantidad: 10
+        cantidad: 7
     }
 ]
 
-module.exports = playeras;
+module.exports = carrito;
