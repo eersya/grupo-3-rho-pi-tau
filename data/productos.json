@@ -1,0 +1,15 @@
+[
+    {
+        "id": "Gojo",
+        "name": "Gojo lentes de sol",
+        "colores": ["negro", "rosa", "beige"],
+        "precio": 230,
+        "genero": "Hombre",
+        "categoria": "Jujutsu Kaisen",
+        "descuento": true,
+        "descuentoPorcentaje": 20
+    }
+    
+]
+
+

@@ -10,11 +10,11 @@ mainRouter.get('/register', mainController.register);
 
 mainRouter.get('/login', mainController.login);
 
-mainRouter.get('/detalle/:id', mainController.detailProduct);
+//mainRouter.get('/detalle/:id', mainController.detailProduct);
 
 mainRouter.get('/carritoDeCompra', mainController.carritoDeCompras);
 
-mainRouter.get('/nuevoProducto', mainController.nuevoProducto);
+//mainRouter.get('/nuevoProducto', mainController.nuevoProducto);
 
 mainRouter.get('/modificaProducto', mainController.modificaProducto);
 

@@ -3,25 +3,20 @@
 const express = require('express');
 const path = require('path');
 const mainRouter = require('./routers/mainRouter');
-const productRouer = require('./routers/productRouter');
+const productRouter = require('./routers/productRouter');
 const userRouter = require('./routers/userRouter');
 const carritoRouter = require('./routers/carritoRouter');
 
-
 const app = express();
 app.use('/', mainRouter);
+app.use('/products', productRouter);
 app.use('/user', userRouter);
-app.use('/product', productRouter);
 app.use('/carrito', productRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
-
 /* Choose available port */
-
 const PORT = process.env.PORT || 3000;
-
 /* view engine setup */
-
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
