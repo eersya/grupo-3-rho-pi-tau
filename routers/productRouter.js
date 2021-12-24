@@ -6,10 +6,10 @@ const path =require("path");
 // ************ Controller Require ************
 const storage =multer.diskStorage({
     destination: (req,file,cb)=>{
-        cb(null, path.join(__dirname,'../../public/images/products') )
+        cb(null, path.join(__dirname,'../../public/images/products') );
     },
     filename:(req,file,cb)=>{
-        console.log(file)
+        console.log(file);
         const newFilename ='img-' + Date.now() + '-' + path.extname(file.originalname); 
         cb(null, newFilename );
     }
@@ -25,7 +25,7 @@ router.get('/create', productController.createProduct);
 
 //const upload = multer({storage:storage });
 //router.post('/',upload.single('image-product'), productsController.store); 
-router.post('/', productController.store); 
+router.post('/', productController.createProduct); 
 /*** GET ONE PRODUCT ***/ 
 router.get('/detail/:id/', productController.detailProduct); 
 

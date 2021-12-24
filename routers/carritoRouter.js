@@ -4,10 +4,10 @@ const carritoController = require('../controllers/carritoController');
 
 carritoRouter.get('/detail/:id', carritoController.detailProduct);
 
-carritoRouter.get('/create', carritoController.createProductView);
+carritoRouter.get('/create', carritoController.createProduct);
 carritoRouter.post('/create', carritoController.createProduct);
 
-carritoRouter.get('/update', carritoController.updateProductView);
+carritoRouter.get('/update', carritoController.updateProduct);
 carritoRouter.put('/update', carritoController.updateProduct);
 
 carritoRouter.delete('/delete/:id', carritoController.deleteProduct);
