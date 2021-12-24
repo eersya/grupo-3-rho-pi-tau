@@ -1,11 +1,15 @@
 const path = require('path');
 const productos = require('./productos');
 // ToDo: modificar los docuemntos a .ejs
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const mainController = {
 
     home: (req,res) => {
-        res.render('home', {productos});
+        res.render('home', {
+            productos:productos,
+            toThousand
+        });
     },
 
     register: (req,res) => {
@@ -18,11 +22,11 @@ const mainController = {
 
     // Cuando tengamos los modelos de nuestros productos
     // tendremos que migrar y modificar este método
-    detailProduct: (req,res) => {
+/*     detailProduct: (req,res) => {
         id = req.params.id;
         producto = productos.find( item => item.id == id);
         res.render('detallesDelProducto', {producto:producto});
-    },
+    }, */
 
     carritoDeCompras: (req,res) => {
         res.render( 'carritoDeCompra');
