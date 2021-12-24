@@ -7,9 +7,106 @@
         "genero": "Hombre",
         "categoria": "Jujutsu Kaisen",
         "descuento": true,
-        "descuentoPorcentaje": 20
+        "descuentoPorcentaje": 20,
+        "imagen": ["Gojo-1.png", "Gojo-2.png", "Gojo-3.png"]
+    },
+    {
+        "id": "Itadori",
+        "name": "Itadori sukuna",
+        "colores": ["negro", "azul", "rosa"],
+        "precio": 230,
+        "genero": "Hombre",
+        "categoria": "Jujutsu Kaisen",
+        "descuento": true,
+        "descuentoPorcentaje": 20,
+        "imagen": ["Itadori-1.png", "Itadori-2.png", "Itadori-3.png"]
+    },
+    {
+        "id": "Jujutsu",
+        "name": "Jujutsu protas",
+        "colores": ["blanco", "negro", "rosa"],
+        "precio": 230,
+        "genero": "Hombre",
+        "categoria": "Jujutsu Kaisen",
+        "descuento": false,
+        "descuentoPorcentaje": null,
+        "imagen": ["Jujutsu-1.png", "Jujutsu-2.png", "Jujutsu-3.png"]
+    },
+    {
+        "id": "Tanjir-os",
+        "name": "TanjirO's",
+        "colores": ["blanco", "negro"],
+        "precio": 230,
+        "genero": "Hombre",
+        "categoria": "Kimetsu no Yaiba",
+        "descuento": true,
+        "descuentoPorcentaje": 20,
+        "imagen": ["Tanjir-os-1.png", "Tangir-os-2.png"]
+    },
+    {
+        "id": "TitanFlakes",
+        "name": "Titan Flakers",
+        "colores": ["blanco", "negro"],
+        "precio": 230,
+        "genero": "Hombre",
+        "categoria": "Shingeki non Kyojin", 
+        "descuento": false,
+        "descuentoPorcentaje": null,
+        "imagen": ["TitanFlakes-1.png", "TitanFlakes-2.png"]
+    },
+    {
+        "id": "Ami",
+        "name": "Misa shinigamis",
+        "colores": ["blanco", "negro", "beige"],
+        "precio": 230,
+        "genero": "Mujer",
+        "categoria": "Death Note", 
+        "descuento": false,
+        "descuentoPorcentaje": null,
+        "imagen": ["Ami-1.png", "Ami-2.png"]
+    },
+    {
+        "id": "Kiki",
+        "name": "Kiki: entregas a domicilio",
+        "colores": ["blanco", "negro", "amarillo"],
+        "precio": 230,
+        "genero": "Mujer",
+        "categoria": "Studio Ghibli", 
+        "descuento": true,
+        "descuentoPorcentaje": 15,
+        "imagen": ["Kiki-1.png", "Kiki-2.png", "Kiki-3.png"]
+    },
+    {
+        "id": "Nezuko",
+        "name": "Just Nezuko",
+        "colores": ["blanco", "negro", "rosa"],
+        "precio": 230,
+        "genero": "Mujer",
+        "categoria": "Kimetsu no Yaiba", 
+        "descuento": false,
+        "descuentoPorcentaje": null,
+        "imagen": ["Nezuko-1.png", "Nezuko-2.png", "Nezuko-3.png"]
+    },
+    {
+        "id": "Nezuko1",
+        "name": "Nezuko Flores",
+        "colores": ["blanco", "negro", "rosa"],
+        "precio": 230,
+        "genero": "Mujer",
+        "categoria": "Kimetsu no Yaiba", 
+        "descuento": true,
+        "descuentoPorcentaje": 25,
+        "imagen": ["Nezuko1-1.png", "Nezuko1-2.png", "Nezuko1-3.png"]
+    },
+    {
+        "id": "Toga",
+        "name": "Himiko Toga",
+        "colores": ["blanco", "negro", "rosa"],
+        "precio": 230,
+        "genero": "Mujer",
+        "categoria": "Boku no hero", 
+        "descuento": false,
+        "descuentoPorcentaje": null,
+        "imagen": ["Toga-1.png", "Toga-2.png", "Toga-3.png"]
     }
-    
 ]
-
-
