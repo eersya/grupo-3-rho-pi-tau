@@ -10,7 +10,7 @@ function saveProducts(ps) {
     fs.writeFileSync(DB_FILANAME, JSON.stringify(ps));
 }
 
-const carritoControllers = {
+const carritoController = {
 
     viewProducts: function(req, res) {
         res.render('home', { carrito: carrito });
@@ -64,4 +64,4 @@ const carritoControllers = {
     }
 };
 
-module.exports = carritoControllers;
+module.exports = carritoController;
