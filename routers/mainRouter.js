@@ -4,14 +4,10 @@ const mainController = require('../controllers/mainController');
 
 const mainRouter = express.Router();
 
+// P+ágina principal
 mainRouter.get('/', mainController.home);
 
-mainRouter.get('/register', mainController.register);
-
+// Página de login
 mainRouter.get('/login', mainController.login);
-
-mainRouter.get('/detalle/:id', mainController.detailProduct);
-
-mainRouter.get('/carritoDeCompra', mainController.carritoDeCompras);
 
 module.exports = mainRouter;

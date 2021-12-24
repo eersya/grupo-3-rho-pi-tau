@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "nombre": "Francisco",
+        "apellidoP": "Minajas",
+        "apellidoM": "Carbajal",
+        "edad": 29,
+        "email": "javier@gmail.com",
+        "activo": true,
+        "fechaNacimiento": "2000-20-11",
+        "tipoUsuario": "usuario",
+        "image": "default.png"
+    },{
+        "id": 2,
+        "nombre": "Erika",
+        "apellidoP": "Jose",
+        "apellidoM": "Juarez",
+        "edad": 23,
+        "email": "ericka@gmail.com",
+        "activo": false,
+        "fechaNacimiento": "1992-08-20",
+        "tipoUsuario": "admin",
+        "image": "default.png"
+    },{
+        "id": 3,
+        "nombre": "Juanito",
+        "apellidoP": "Lozada",
+        "apellidoM": "Pineda",
+        "edad": 20,
+        "email": "ericka@gmail.com",
+        "activo": true,
+        "fechaNacimiento": "1989-01-20",
+        "tipoUsuario": "admin",
+        "image": "default.png"
+    },{
+        "id": 4,
+        "nombre": "Juanito",
+        "apellidoP": "Lozada",
+        "apellidoM": "Pineda",
+        "edad": 28,
+        "email": "ericka@gmail.com",
+        "activo": false,
+        "fechaNacimiento": "2012-02-20",
+        "tipoUsuario": "usuario",
+        "image": "default.png"
+    },{
+        "id": 5,
+        "nombre": "Pepe",
+        "apellidoP": "Perez",
+        "apellidoM": "Perez",
+        "edad": 19,
+        "email": "pepe@gmail.com",
+        "activo": true,
+        "fechaNacimiento": "2002-03-11",
+        "tipoUsuario": "vendedor",
+        "image": "default.png"
+    },{
+        "id": 6,
+        "nombre": "Aurora",
+        "apellidoP": "Juarez",
+        "apellidoM": "Lopez",
+        "edad": 18,
+        "email": "aurora@gmail.com",
+        "activo": false,
+        "fechaNacimiento": "1996-03-11",
+        "tipoUsuario": "vendedor",
+        "image": "default.png"
+    },{
+        "id": 7,
+        "nombre": "Arely",
+        "apellidoP": "Lopez",
+        "apellidoM": "Juarez",
+        "edad": 17,
+        "email": "arely@gmail.com",
+        "activo": true,
+        "fechaNacimiento": "1966-03-11",
+        "tipoUsuario": "usuario",
+        "image": "default.png"
+    },{
+        "id": 8,
+        "nombre": "Danae",
+        "apellidoP": "Juarez",
+        "apellidoM": "Lopez",
+        "edad": 15,
+        "email": "danae@gmail.com",
+        "activo": false,
+        "fechaNacimiento": "1952-03-11",
+        "tipoUsuario": "usuario",
+        "image": "default.png"
+    },{
+        "id": 9,
+        "nombre": "Jose",
+        "apellidoP": "Lopez",
+        "apellidoM": "Lopez",
+        "edad": 16,
+        "email": "jose.lopez@gmail.com",
+        "activo": true,
+        "fechaNacimiento": "1942-03-11",
+        "tipoUsuario": "admin",
+        "image": "default.png"
+    }
+]

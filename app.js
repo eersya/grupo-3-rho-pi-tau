@@ -3,10 +3,14 @@
 const express = require('express');
 const path = require('path');
 const mainRouter = require('./routers/mainRouter');
-
+const productRouer = require('./routers/productRouter');
+const userRouter = require('./routers/userRouter');
 
 const app = express();
 app.use('/', mainRouter);
+app.use('/user', userRouter);
+app.use('/product', productRouer);
+
 
 
 app.use(express.static(path.join(__dirname, 'public')));
