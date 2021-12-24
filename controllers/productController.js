@@ -1,4 +1,3 @@
-
 const DB_FILENAME = 'productos.json';
 const productos = require('./productos');
 
