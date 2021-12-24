@@ -8,7 +8,8 @@ carrito = [
         categoria: 'Jujutsu Kaisen',
         descuento: true,
         descuentoPorcentaje: 20,
-        cantidad: 1
+        cantidad: 1,
+        idUsuario: 1
     },
     {
         id: 'Jujutsu',
@@ -19,7 +20,8 @@ carrito = [
         categoria: 'Jujutsu Kaisen',
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 1
+        cantidad: 1,
+        idUsuario: 5
     },
     {
         id: 'Tangir-os',
@@ -30,7 +32,8 @@ carrito = [
         categoria: 'Kimetsu no Yaiba',
         descuento: true,
         descuentoPorcentaje: 20,
-        cantidad: 1
+        cantidad: 1,
+        idUsuario: 7
     },
     {
         id: 'Ami',
@@ -41,7 +44,8 @@ carrito = [
         categoria: 'Death Note', 
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 2
+        cantidad: 2,
+        idUsuario: 3
     },
     {
         id: 'Kiki',
@@ -52,7 +56,8 @@ carrito = [
         categoria: 'Studio Ghibli', 
         descuento: true,
         descuentoPorcentaje: 15,
-        cantidad: 3
+        cantidad: 3,
+        idUsuario: 8
     },
     {
         id: 'Nezuko',
@@ -63,7 +68,8 @@ carrito = [
         categoria: 'Kimetsu no Yaiba', 
         descuento: false,
         descuentoPorcentaje: null,
-        cantidad: 5
+        cantidad: 5,
+        idUsuario: 2
     },
     {
         id: 'Nezuko1',
@@ -74,7 +80,8 @@ carrito = [
         categoria: 'Kimetsu no Yaiba', 
         descuento: true,
         descuentoPorcentaje: 25,
-        cantidad: 7
+        cantidad: 7,
+        idUsuario: 5
     }
 ]
 
