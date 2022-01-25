@@ -12,4 +12,4 @@ create table ropita
   );
 
 CREATE USER 'ropita_user'@'localhost' IDENTIFIED BY '89911992';
-GRANT ALL PRIVILEGES ON todo.* TO 'ropita_user'@'localhost';
+GRANT ALL PRIVILEGES ON ropita.* TO 'ropita_user'@'localhost';
