@@ -4,19 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fminajasc1000/ibigen.git"
+    "url": "git+https://github.com/eersya/grupo-3-rho-pi-tau.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fminajasc1000/ibigen/issues"
+    "url": "https://github.com/eersya/grupo-3-rho-pi-tau/issues"
   },
-  "homepage": "https://github.com/fminajasc1000/ibigen#readme",
+  "homepage": "https: //github.com/eersya/grupo-3-rho-pi-tau/#readme",
   "dependencies": {
     "axios": "^0.26.0",
     "bcryptjs": "^2.4.3",
